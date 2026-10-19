@@ -104,8 +104,8 @@
     }
   },
   "dependencies": {
-    "@zofai/cli": "0.1.0",
-    "@zofai/evidence-spec": "0.1.0"
+    "@zof-ai/cli": "0.1.0",
+    "@zof-ai/evidence-spec": "0.1.0"
   },
   "private": true
 }

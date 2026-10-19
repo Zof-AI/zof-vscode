@@ -1,6 +1,6 @@
 import * as vscode from 'vscode';
-import {verify,analyzeImpact,doctor,formatVerification} from '@zofai/cli';
-import {serializeEvidence,assertSafeRelativePath} from '@zofai/evidence-spec';
+import {verify,analyzeImpact,doctor,formatVerification} from '@zof-ai/cli';
+import {serializeEvidence,assertSafeRelativePath} from '@zof-ai/evidence-spec';
 let lastReport:string|undefined;
 let diagnostics:vscode.DiagnosticCollection;
 export function activate(context:vscode.ExtensionContext){
