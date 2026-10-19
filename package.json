@@ -1,0 +1,111 @@
+{
+  "name": "zof-verification",
+  "version": "0.1.0",
+  "description": "Local static verification, impact analysis and portable evidence.",
+  "type": "module",
+  "main": "./dist/extension.cjs",
+  "engines": {
+    "vscode": "^1.99.0"
+  },
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Zof-AI/zof-vscode.git"
+  },
+  "homepage": "https://github.com/Zof-AI/zof-vscode#readme",
+  "bugs": {
+    "url": "https://github.com/Zof-AI/zof-vscode/issues"
+  },
+  "keywords": [
+    "verification",
+    "testing",
+    "zof"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json && esbuild src/extension.ts --bundle --platform=node --format=cjs --target=node22 --external:vscode --outfile=dist/extension.cjs",
+    "test": "node --test tests/*.test.mjs",
+    "test:editor": "node tests/run-editor.mjs",
+    "check": "npm run build && npm test",
+    "package": "vsce package --no-dependencies --allow-missing-repository --out zof-verification-0.1.0.vsix"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "@types/node": "22.19.11",
+    "@types/vscode": "1.99.1",
+    "esbuild": "0.28.2",
+    "@vscode/vsce": "4.0.0",
+    "@vscode/test-electron": "2.5.2"
+  },
+  "publisher": "zof-ai",
+  "displayName": "Zof Local Verification",
+  "categories": [
+    "Testing",
+    "Linters"
+  ],
+  "icon": "images/icon.png",
+  "activationEvents": [
+    "onCommand:zof.verify",
+    "onCommand:zof.impact",
+    "onCommand:zof.evidence",
+    "onCommand:zof.openReport",
+    "onCommand:zof.doctor"
+  ],
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": false,
+      "description": "Verification is available only in explicitly trusted workspaces."
+    },
+    "virtualWorkspaces": false
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "zof.verify",
+        "title": "Zof: Verify Current Changes"
+      },
+      {
+        "command": "zof.impact",
+        "title": "Zof: Analyze Change Impact"
+      },
+      {
+        "command": "zof.evidence",
+        "title": "Zof: Generate Evidence"
+      },
+      {
+        "command": "zof.openReport",
+        "title": "Zof: Open Verification Report"
+      },
+      {
+        "command": "zof.doctor",
+        "title": "Zof: Check Installation"
+      }
+    ],
+    "configuration": {
+      "title": "Zof",
+      "properties": {
+        "zof.baseRevision": {
+          "type": "string",
+          "default": "HEAD",
+          "description": "Baseline revision for local static verification."
+        },
+        "zof.failOn": {
+          "type": "string",
+          "enum": [
+            "info",
+            "low",
+            "medium",
+            "high",
+            "critical"
+          ],
+          "default": "high",
+          "description": "Minimum severity that fails verification."
+        }
+      }
+    }
+  },
+  "dependencies": {
+    "@zof-ai/cli": "0.1.0",
+    "@zof-ai/evidence-spec": "0.1.0"
+  },
+  "private": true
+}
