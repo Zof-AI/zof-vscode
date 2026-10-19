@@ -16,14 +16,14 @@ npm run build
 npm test
 ```
 
-The bootstrap downloads only the exact `v0.1.0` dependency assets from [GitHub Releases](https://github.com/Zof-AI/zof-vscode/releases), as listed in `scripts/release-dependencies.json`, verifies SHA256 and byte size, and adds them to the npm cache. It does not extract archives, run package scripts, collect application data, or send credentials. Downloads require the explicit flag and follow only HTTPS GitHub asset redirects. Installation then fetches ordinary third-party dependencies from npm. Use a writable npm cache; set `npm_config_cache` consistently for both commands if needed. An unavailable asset, changed hash, or oversized response stops installation.
+The bootstrap downloads only the exact versioned dependency assets from [GitHub Releases](https://github.com/Zof-AI/zof-vscode/releases), as listed in `scripts/release-dependencies.json`, verifies SHA256 and byte size, and adds them to the npm cache. It does not extract archives, run package scripts, collect application data, or send credentials. Downloads require the explicit flag and follow only HTTPS GitHub asset redirects. Installation then fetches ordinary third-party dependencies from npm. Use a writable npm cache; set `npm_config_cache` consistently for both commands if needed. An unavailable asset, changed hash, or oversized response stops installation.
 
 GitHub source and release artifacts are the initial distribution channel. These instructions do not claim that `@zof-ai` packages are published on npm or that the VS Code extension is listed in Marketplace.
 <!-- ZOF_RELEASE_INSTALL_END -->
 
 ## Install the extension
 
-After the GitHub source installation above, build the extension with `npm run build`, `npm test` and `npm run package`. Install the resulting `zof-verification-0.1.0.vsix` using Extensions: Install from VSIX. The extension identifier uses `zof-ai`; publisher ownership and Marketplace publication remain unverified. Downloadable VSIX assets are listed on this repository's GitHub Releases page. A VSIX is not a Marketplace listing.
+After the GitHub source installation above, build the extension with `npm run build`, `npm test` and `npm run package`. Install the resulting `zof-verification-0.1.1.vsix` using Extensions: Install from VSIX. The extension identifier uses `zof-ai`; publisher ownership and Marketplace publication remain unverified. Downloadable VSIX assets are listed on this repository's GitHub Releases page. A VSIX is not a Marketplace listing.
 
 ## Three workflows
 

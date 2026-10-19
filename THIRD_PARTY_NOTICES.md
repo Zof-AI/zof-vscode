@@ -2,7 +2,7 @@
 
 Generated from installed locked runtime dependencies for the bundled artifact. Final compatibility and ownership require legal review.
 
-## @zof-ai/cli@0.1.0
+## @zof-ai/cli@0.1.1
 
 Declared license: Apache-2.0
 
@@ -569,7 +569,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-## @zof-ai/change-impact@0.1.0
+## @zof-ai/change-impact@0.1.1
 
 Declared license: Apache-2.0
 
@@ -1467,7 +1467,7 @@ LICENSE
    limitations under the License.
 
 
-## @zof-ai/code-risk-score@0.1.0
+## @zof-ai/code-risk-score@0.1.1
 
 Declared license: Apache-2.0
 
@@ -1676,7 +1676,7 @@ LICENSE
    limitations under the License.
 
 
-## @zof-ai/test-selection@0.1.0
+## @zof-ai/test-selection@0.1.1
 
 Declared license: Apache-2.0
 
