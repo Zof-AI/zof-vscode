@@ -2,7 +2,7 @@
 
 Generated from installed locked runtime dependencies for the bundled artifact. Final compatibility and ownership require legal review.
 
-## @zof-ai/cli@0.1.0
+## @zofai/cli@0.1.0
 
 Declared license: Apache-2.0
 
@@ -211,7 +211,7 @@ LICENSE
    limitations under the License.
 
 
-## @zof-ai/evidence-spec@0.1.0
+## @zofai/evidence-spec@0.1.0
 
 Declared license: Apache-2.0
 
@@ -569,7 +569,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-## @zof-ai/change-impact@0.1.0
+## @zofai/change-impact@0.1.0
 
 Declared license: Apache-2.0
 
@@ -840,7 +840,7 @@ If the Work includes a "NOTICE" text file as part of its distribution, then any 
 END OF TERMS AND CONDITIONS
 
 
-## @zof-ai/policy-as-code@0.1.0
+## @zofai/policy-as-code@0.1.0
 
 Declared license: Apache-2.0
 
@@ -1049,7 +1049,7 @@ LICENSE
    limitations under the License.
 
 
-## @zof-ai/api-contract-check@0.1.0
+## @zofai/api-contract-check@0.1.0
 
 Declared license: Apache-2.0
 
@@ -1258,7 +1258,7 @@ LICENSE
    limitations under the License.
 
 
-## @zof-ai/schema-diff@0.1.0
+## @zofai/schema-diff@0.1.0
 
 Declared license: Apache-2.0
 
@@ -1467,7 +1467,7 @@ LICENSE
    limitations under the License.
 
 
-## @zof-ai/code-risk-score@0.1.0
+## @zofai/code-risk-score@0.1.0
 
 Declared license: Apache-2.0
 
@@ -1676,7 +1676,7 @@ LICENSE
    limitations under the License.
 
 
-## @zof-ai/test-selection@0.1.0
+## @zofai/test-selection@0.1.0
 
 Declared license: Apache-2.0
 
@@ -1885,7 +1885,7 @@ LICENSE
    limitations under the License.
 
 
-## @zof-ai/testgen@0.1.0
+## @zofai/testgen@0.1.0
 
 Declared license: Apache-2.0
 
@@ -2094,7 +2094,7 @@ LICENSE
    limitations under the License.
 
 
-## @zof-ai/ci-evidence@0.1.0
+## @zofai/ci-evidence@0.1.0
 
 Declared license: Apache-2.0
 
