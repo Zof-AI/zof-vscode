@@ -33,7 +33,7 @@
     "@types/node": "22.19.11",
     "@types/vscode": "1.99.1",
     "esbuild": "0.28.2",
-    "@vscode/vsce": "4.0.0",
+    "@vscode/vsce": "4.1.0",
     "@vscode/test-electron": "2.5.2"
   },
   "publisher": "zof-ai",
